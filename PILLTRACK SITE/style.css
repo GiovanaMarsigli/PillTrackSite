@@ -278,7 +278,6 @@ p {
     gap: 30px; /* Espaço entre os cards */
 }
 
-
 /* Estilo para o grid de desenvolvedores */
 .developers-grid {
     display: flex;
@@ -350,51 +349,204 @@ p {
 }
 
 .footer {
-    background-color: #AC0000;
-    color: white;
-    padding: 20px 0; /* Reduz o padding superior e inferior */
+    background-color: #92BA8B;
+    color: black;
+    padding: 40px 0;
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
-    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    align-items: flex-start; /* Alinha todos os itens à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.container {
+.footer .container {
     display: flex;
-    justify-content: space-between; /* Alinha os itens lado a lado */
-    width: 100%;
+    justify-content: flex-start; /* Alinhar ao início */
+    align-items: flex-start; /* Alinhar os elementos ao topo */
     max-width: 1200px;
+    width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
 }
 
-.footer-info, .footer-contact {
-    flex: 1; /* Permite que os itens ocupem o mesmo espaço */
-    margin: 0 20px; /* Adiciona algum espaçamento lateral */
-    justify-content: space-between;
-}
-
 .footer-info {
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0 10px; /* Adicionar um pequeno padding para espaçamento */
+    max-width: 45%; /* Limitar a largura do comunicado */
 }
 
 .footer-contact {
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    padding: 0 10px; /* Adicionar um pequeno padding para espaçamento */
+    max-width: 45%; /* Manter o contato próximo ao comunicado */
+}
+
+.footer-info h4, .footer-contact h4 {
+    margin: 0; /* Remove qualquer margem adicional */
+    font-size: 18px; /* Tamanho da fonte dos títulos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adicionar sombra aos títulos */
+}
+
+.footer-info p, .footer-contact p {
+    margin: 0;
+    font-size: 14px; /* Tamanho da fonte dos parágrafos */
 }
 
 .footer-contact a {
-    color: white; /* Cor do link para combinar com o fundo do footer */
-    text-decoration: none; /* Remove o sublinhado do link */
-    font-weight: bold; /* Torna o link em negrito */
+    color: black;
+    text-decoration: none;
+    font-size: 14px; /* Tamanho da fonte do email */
+    font-weight: normal; /* Remover negrito do email */
 }
 
 .footer-contact a:hover {
-    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+    text-decoration: underline;
 }
 
-.copyright {
-    font-size: 14px; /* Reduz o tamanho da fonte do copyright */
-    text-align: center; /* Alinha o texto ao centro */
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 12px; /* Aumentar o tamanho da fonte do copyright */
+    text-align: center; /* Alinhar o texto do copyright à esquerda */
     width: 100%;
-    padding: 10px 20px; /* Adiciona um padding para garantir espaço ao redor */
+    padding: 0 20px;
     box-sizing: border-box;
+}/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Reduzir tamanho da fonte do início */
+    h1 {
+        font-size: 24px; /* Tamanho menor para dispositivos móveis */
+    }
+    
+    /* Garantir que o tamanho da fonte da seção "Sobre" seja o mesmo que o da seção "Início" */
+    .about {
+        font-size: 24px; /* Igual ao tamanho da fonte do título "Início" */
+    }
+
+    /* Ajustar o tamanho da fonte dos parágrafos */
+    p {
+        font-size: 14px; /* Tamanho menor para dispositivos móveis */
+    }
+
+    /* Remover imagem "PillTrack" inicial e "screenshots" para dispositivos móveis */
+    .hero-image, .screenshots img {
+        display: none; /* Esconde a imagem inicial e a imagem de screenshots */
+    }
+
+    /* Ajustes de layout */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text, .hero-image {
+        padding: 0;
+        text-align: center;
+    }
+
+    .about .about-content {
+        text-align: center;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .developer {
+        flex-direction: column;
+        text-align: center;
+        width: 100%; /* Ajuste a largura para dispositivos móveis */
+        max-width: 300px; /* Limita a largura máxima */
+    }
+
+    .developer img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info, .footer-contact {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul.showing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #F0F2EE;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Redimensionamento de imagens */
+    .hero img,
+    .screenshots img {
+        width: 100%;
+        max-width: 300px; /* Defina o tamanho máximo da imagem para dispositivos móveis */
+        height: auto;
+    }
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu-toggle {
+        display: block;
+    }
 }
