@@ -221,7 +221,6 @@ p {
     overflow: hidden;
 }
 
-
 .step img {
     background-color: #AC0000;
     border-radius: 50%;
@@ -252,4 +251,150 @@ p {
 
 .step:hover {
     transform: translateY(-10px);
+}
+
+.mid-title {
+    padding: 40px 0;
+    background-color: #F0F2EE;
+    text-align: center;
+}
+
+.mid-title h2 {
+    font-size: 36px;
+    color: #AC0000;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(172, 0, 0, 0.4);
+}
+
+.mid-title p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Fundo verde para a seção "Desenvolvedoras" */
+.developers {
+    display: flex;
+    justify-content: space-around; /* Alterado para alinhar os cards com a margem */
+    gap: 30px; /* Espaço entre os cards */
+}
+
+
+/* Estilo para o grid de desenvolvedores */
+.developers-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilo para cada cartão de desenvolvedor */
+.developer {
+    display: flex;
+    align-items: center;
+    background-color: #92BA8B;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 325px; 
+}
+
+.developer img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 100%;
+    border: 5px solid #AC0000; 
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.developer .text-container {
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar h4 e p verticalmente */
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.developer h4 {
+    margin: 0 0 10px; /* Ajustar a margem para espaçar os elementos */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.developer p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a {
+    color: #AC0000;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #920000;
+}
+
+.social-links img {
+    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    border: none; /* Remova qualquer borda */
+}
+
+.footer {
+    background-color: #AC0000;
+    color: white;
+    padding: 20px 0; /* Reduz o padding superior e inferior */
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Alinha os itens lado a lado */
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-info, .footer-contact {
+    flex: 1; /* Permite que os itens ocupem o mesmo espaço */
+    margin: 0 20px; /* Adiciona algum espaçamento lateral */
+    justify-content: space-between;
+}
+
+.footer-info {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-contact {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.footer-contact a {
+    color: white; /* Cor do link para combinar com o fundo do footer */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Torna o link em negrito */
+}
+
+.footer-contact a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+.copyright {
+    font-size: 14px; /* Reduz o tamanho da fonte do copyright */
+    text-align: center; /* Alinha o texto ao centro */
+    width: 100%;
+    padding: 10px 20px; /* Adiciona um padding para garantir espaço ao redor */
+    box-sizing: border-box;
 }
