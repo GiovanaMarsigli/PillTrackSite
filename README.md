@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-PillTracl
+PillTrack
 </p>
 
 ## Tabela de Conteúdos
