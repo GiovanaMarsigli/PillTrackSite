@@ -1,7 +1,7 @@
 <h1 align="center">PillTrack</h1> <br>
 <p align="center">
   <a  href="https://github.com/GiovanaMarsigli/PillTrack">
-    <img alt="PillTrack Logo" title="GitPoint" src="assets/logo.png" width="450">
+    <img alt="PillTrack Logo" title="GitPoint" src="PILLTRACK SITE/img/logopilltrack.png" width="450">
   </a>
 </p>
 
