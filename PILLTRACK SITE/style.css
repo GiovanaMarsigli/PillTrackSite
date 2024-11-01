@@ -1,7 +1,7 @@
 body {
     background-color: #F0F2EE;
     font-family: 'Poppins', sans-serif;
-    padding-top: 50px; /* Ajuste a altura conforme necessário */
+    padding-top: 50px; 
 }
 
 .navbar {
@@ -79,12 +79,12 @@ ul li a.active {
 ul li a.active::after {
     content: '';
     display: block;
-    width: 20px; /* Define a largura fixa da linha vermelha */
+    width: 20px; 
     height: 2px;
     background-color: #AC0000;
     position: absolute;
     bottom: -5px;
-    left: 0; /* Alinha a linha à esquerda */
+    left: 0; 
 }
 
 .hero {
@@ -147,9 +147,9 @@ p {
 }
 
 .about h2 {
-    font-size: 28px; /* Diminua a fonte do h2 */
+    font-size: 28px;
     color: #AC0000;
-    text-shadow: 0 2px 4px rgba(172, 0, 0, 0.4); /* Sombra vermelha */
+    text-shadow: 0 2px 4px rgba(172, 0, 0, 0.4); 
     margin-bottom: 10px;
 }
 
@@ -186,7 +186,7 @@ p {
 
 .screenshots img {
     width: 700px;
-    max-width: 800px; /* Aumente a largura máxima da imagem */
+    max-width: 800px; 
     height: auto;
     margin-top: 20px;
 }
@@ -205,15 +205,15 @@ p {
 
 .steps {
     display: flex;
-    justify-content: space-around; /* Alterado para alinhar os cards com a margem */
-    gap: 20px; /* Espaço entre os cards */
+    justify-content: space-around; 
+    gap: 20px; 
 }
 
 .step {
     background-color: #92BA8B;
     padding: 20px;
     border-radius: 20px;
-    width: calc((100% - 60px) / 3); /* Ajuste para 3 cards por linha com espaço */
+    width: calc((100% - 60px) / 3); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
@@ -225,22 +225,22 @@ p {
     background-color: #AC0000;
     border-radius: 50%;
     padding: 5px;
-    width: 80px; /* Aumentar o tamanho da bola vermelha */
-    height: 80px; /* Aumentar o tamanho da bola vermelha */
+    width: 80px; 
+    height: 80px; 
     position: absolute;
-    top: 20px; /* Ajustar para posicionar a bola na parte superior do card */
+    top: 20px; 
     left: 50%;
     transform: translateX(-50%);
 }
 
 .step img img {
-    width: 50px; /* Ajustar o tamanho do ícone dentro da bola vermelha */
+    width: 50px; 
     height: 50px;
 }
 
 .step h3 {
     font-size: 18px;
-    margin-top: 110px; /* Ajustar o espaço acima do título */
+    margin-top: 110px; 
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -271,21 +271,18 @@ p {
     color: #333;
 }
 
-/* Fundo verde para a seção "Desenvolvedoras" */
 .developers {
     display: flex;
-    justify-content: space-around; /* Alterado para alinhar os cards com a margem */
-    gap: 30px; /* Espaço entre os cards */
+    justify-content: space-around; 
+    gap: 30px; 
 }
 
-/* Estilo para o grid de desenvolvedores */
 .developers-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-/* Estilo para cada cartão de desenvolvedor */
 .developer {
     display: flex;
     align-items: center;
@@ -302,17 +299,17 @@ p {
     height: 100px; 
     border-radius: 100%;
     border: 5px solid #AC0000; 
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-right: 20px; 
 }
 
 .developer .text-container {
     display: flex;
-    flex-direction: column; /* Coluna para alinhar h4 e p verticalmente */
-    text-align: left; /* Alinhar o texto à esquerda */
+    flex-direction: column; 
+    text-align: left; 
 }
 
 .developer h4 {
-    margin: 0 0 10px; /* Ajustar a margem para espaçar os elementos */
+    margin: 0 0 10px; 
     font-size: 18px;
     font-weight: 600;
 }
@@ -343,9 +340,9 @@ p {
 }
 
 .social-links img {
-    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
-    height: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
-    border: none; /* Remova qualquer borda */
+    width: 40px; 
+    height: 40px;
+    border: none; 
 }
 
 .footer {
@@ -354,14 +351,14 @@ p {
     padding: 40px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha todos os itens à esquerda */
-    text-align: left; /* Alinha o texto à esquerda */
+    align-items: flex-start;
+    text-align: left; 
 }
 
 .footer .container {
     display: flex;
-    justify-content: flex-start; /* Alinhar ao início */
-    align-items: flex-start; /* Alinhar os elementos ao topo */
+    justify-content: flex-start; 
+    align-items: flex-start; 
     max-width: 1200px;
     width: 100%;
     padding: 0 20px;
@@ -372,34 +369,34 @@ p {
     flex: 1;
     text-align: left;
     margin: 0;
-    padding: 0 10px; /* Adicionar um pequeno padding para espaçamento */
-    max-width: 45%; /* Limitar a largura do comunicado */
+    padding: 0 10px; 
+    max-width: 45%; 
 }
 
 .footer-contact {
     flex: 1;
     text-align: left;
     margin: 0;
-    padding: 0 10px; /* Adicionar um pequeno padding para espaçamento */
-    max-width: 45%; /* Manter o contato próximo ao comunicado */
+    padding: 0 10px; 
+    max-width: 45%;
 }
 
 .footer-info h4, .footer-contact h4 {
-    margin: 0; /* Remove qualquer margem adicional */
-    font-size: 18px; /* Tamanho da fonte dos títulos */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adicionar sombra aos títulos */
+    margin: 0; 
+    font-size: 18px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .footer-info p, .footer-contact p {
     margin: 0;
-    font-size: 14px; /* Tamanho da fonte dos parágrafos */
+    font-size: 14px; 
 }
 
 .footer-contact a {
     color: black;
     text-decoration: none;
-    font-size: 14px; /* Tamanho da fonte do email */
-    font-weight: normal; /* Remover negrito do email */
+    font-size: 14px; 
+    font-weight: normal; 
 }
 
 .footer-contact a:hover {
@@ -408,34 +405,30 @@ p {
 
 .footer-copyright {
     margin-top: 20px;
-    font-size: 12px; /* Aumentar o tamanho da fonte do copyright */
-    text-align: center; /* Alinhar o texto do copyright à esquerda */
+    font-size: 12px; 
+    text-align: center;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-}/* Ajustes para dispositivos móveis */
-@media (max-width: 768px) {
-    /* Reduzir tamanho da fonte do início */
+
+}
+    @media (max-width: 768px) {
     h1 {
-        font-size: 24px; /* Tamanho menor para dispositivos móveis */
+        font-size: 24px; 
     }
     
-    /* Garantir que o tamanho da fonte da seção "Sobre" seja o mesmo que o da seção "Início" */
     .about {
-        font-size: 24px; /* Igual ao tamanho da fonte do título "Início" */
+        font-size: 24px; 
     }
 
-    /* Ajustar o tamanho da fonte dos parágrafos */
     p {
-        font-size: 14px; /* Tamanho menor para dispositivos móveis */
+        font-size: 14px; 
     }
 
-    /* Remover imagem "PillTrack" inicial e "screenshots" para dispositivos móveis */
     .hero-image, .screenshots img {
-        display: none; /* Esconde a imagem inicial e a imagem de screenshots */
+        display: none; 
     }
 
-    /* Ajustes de layout */
     .container {
         flex-direction: column;
         align-items: center;
@@ -468,8 +461,8 @@ p {
     .developer {
         flex-direction: column;
         text-align: center;
-        width: 100%; /* Ajuste a largura para dispositivos móveis */
-        max-width: 300px; /* Limita a largura máxima */
+        width: 100%; 
+        max-width: 300px;
     }
 
     .developer img {
@@ -519,30 +512,12 @@ p {
         padding: 10px 0;
     }
 
-    /* Redimensionamento de imagens */
     .hero img,
     .screenshots img {
         width: 100%;
-        max-width: 300px; /* Defina o tamanho máximo da imagem para dispositivos móveis */
+        max-width: 300px; 
         height: auto;
     }
-}
-
-/* Menu Hambúrguer */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #000;
-    transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -551,7 +526,6 @@ p {
     }
 }
 
-/* Configurações gerais para responsividade */
 body {
     background-color: #F0F2EE;
     font-family: 'Poppins', sans-serif;
@@ -568,7 +542,6 @@ body {
     z-index: 1000;
 }
 
-/* Configuração de container flexível */
 .container {
     display: flex;
     justify-content: space-between;
@@ -578,7 +551,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navbar: Menu e Links */
 ul {
     list-style: none;
     display: flex;
@@ -595,20 +567,11 @@ ul li a {
     transition: font-weight 0.3s ease;
 }
 
-/* Estilo para telas menores que 768px */
 @media (max-width: 768px) {
-    /* Exibir o ícone de menu hambúrguer */
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* Ocultar o menu principal no celular inicialmente */
     .navbar ul {
         display: none;
     }
 
-    /* Exibir o menu quando o ícone hambúrguer é ativado */
     .navbar ul.showing {
         display: flex;
         flex-direction: column;
@@ -621,13 +584,11 @@ ul li a {
         z-index: 999;
     }
 
-    /* Ajustes para itens do menu no celular */
     .navbar ul li {
         width: 100%;
         padding: 10px 0;
     }
 
-    /* Centralizar e ajustar tamanho das imagens */
     .hero img,
     .screenshots img,
     .step img {
@@ -636,7 +597,6 @@ ul li a {
         height: auto;
     }
 
-    /* Ajustar tamanho dos textos e botões */
     h1 {
         font-size: 24px;
     }
@@ -650,19 +610,16 @@ ul li a {
         font-size: 16px;
     }
 
-    /* Layout flexível em coluna para centralizar */
     .container, .hero-content, .steps, .developers-grid {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Ajustar largura dos cartões no celular */
     .step, .developer {
         width: 100%;
         max-width: 300px;
     }
 
-    /* Footer ajustado para mobile */
     .footer .container, .footer-info, .footer-contact {
         flex-direction: column;
         align-items: center;
@@ -671,14 +628,12 @@ ul li a {
         margin-bottom: 20px;
     }
 }
-/* Configurações gerais */
 body {
     background-color: #F0F2EE;
     font-family: 'Poppins', sans-serif;
     padding-top: 50px;
 }
 
-/* Ajustes para Navbar e Layout */
 .navbar {
     padding: 10px 0;
     position: fixed;
@@ -715,20 +670,16 @@ ul li a {
     transition: font-weight 0.3s ease;
 }
 
-/* Responsividade para Dispositivos Móveis */
 @media (max-width: 768px) {
-    /* Exibir ícone de menu hamburguer */
     .menu-toggle {
         display: block;
         cursor: pointer;
     }
 
-    /* Ocultar menu principal inicialmente */
     .navbar ul {
         display: none;
     }
 
-    /* Exibir menu ao clicar no hamburguer */
     .navbar ul.showing {
         display: flex;
         flex-direction: column;
@@ -741,7 +692,6 @@ ul li a {
         z-index: 999;
     }
 
-    /* Ajuste do tamanho dos cards */
     .steps, .developers-grid {
         flex-direction: column;
         align-items: center;
@@ -749,19 +699,16 @@ ul li a {
     }
 
     .step, .developer {
-        width: 90%; /* Reduz a largura dos cards no mobile */
-        max-width: 280px; /* Define um limite máximo de largura */
-        margin-bottom: 20px; /* Espaçamento entre os cards */
+        width: 90%; 
+        max-width: 280px; 
+        margin-bottom: 20px; 
     }
-
-    /* Centralizar e ajustar imagens */
     .hero img, .screenshots img, .step img {
         width: 100%;
-        max-width: 250px; /* Limita o tamanho das imagens */
+        max-width: 250px; 
         height: auto;
     }
 
-    /* Ajuste de texto e botões */
     h1 {
         font-size: 24px;
     }
@@ -775,7 +722,6 @@ ul li a {
         font-size: 16px;
     }
 
-    /* Footer Responsivo */
     .footer .container, .footer-info, .footer-contact {
         flex-direction: column;
         align-items: center;
@@ -785,71 +731,58 @@ ul li a {
     }
 }
 @media (max-width: 768px) {
-    /* Ajuste de tamanho dos cards no mobile */
     .step, .developer {
         width: 90%;
         max-width: 280px;
         margin-bottom: 20px;
     }
 
-    /* Ajuste do círculo no topo dos cards */
     .step img {
-        width: 60px;  /* Reduz o diâmetro do círculo */
+        width: 60px;  
         height: 60px;
-        padding: 4px; /* Reduz o espaçamento interno */
-        top: 10px; /* Ajuste a posição para centralizar */
+        padding: 4px; 
+        top: 10px; 
     }
 
-    /* Ajuste do ícone dentro do círculo */
     .step img img {
-        width: 40px;  /* Ajuste o tamanho do ícone */
+        width: 40px;  
         height: 40px;
     }
 }
-/* Ajustes de fontes de títulos para dispositivos móveis */
 @media (max-width: 768px) {
     h1, h2, h3 {
-        font-size: 24px !important; /* Define o mesmo tamanho para todos os títulos */
+        font-size: 24px !important; 
         font-weight: bold;
-        color: #000; /* Define a cor preta para os títulos */
+        color: #000; 
         text-align: center;
         margin-bottom: 20px;
         text-shadow: none;
     }
 }
 
-
-/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-    /* Ajuste de espaço no topo para evitar sobreposição */
     .hero {
-        padding-top: 80px; /* Adicione espaço no topo da seção hero */
+        padding-top: 80px; 
     }
 
-    /* Navbar fixa sem sobrepor o conteúdo */
     .navbar {
-        height: 60px; /* Altura adequada para navbar no mobile */
+        height: 60px; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Reduz ao mínimo o espaço entre as sections */
     section {
-        margin-top: 2px !important; /* Reduz ainda mais a margem superior */
-        margin-bottom: 2px !important; /* Reduz ainda mais a margem inferior */
-        padding-top: 2px !important; /* Reduz ainda mais o padding superior */
-        padding-bottom: 2px !important; /* Reduz ainda mais o padding inferior */
+        margin-top: 2px !important; 
+        margin-bottom: 2px !important; 
+        padding-top: 2px !important; 
+        padding-bottom: 2px !important; 
     }
 }
 @media (max-width: 768px) {
-    /* Ajustar o espaço entre o menu toggle e a primeira seção */
     .hero {
-        margin-top: 500; /* Aumente ou diminua conforme necessário */
+        margin-top: 500; 
     }
 
-    /* Outros estilos responsivos... */
-
-/* Navbar */
 .navbar {
     padding: 10px 0;
     position: fixed;
@@ -868,8 +801,6 @@ ul li a {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Imagens e Títulos */
 
 .imglogo {
     width: 50px;

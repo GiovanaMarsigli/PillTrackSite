@@ -20,13 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Update active link on scroll
     document.addEventListener('scroll', updateActiveLink);
 
-    // Update active link on page load
     updateActiveLink();
 
-    // Add smooth scroll behavior
     navLinks.forEach(link => {
         link.addEventListener('click', function (event) {
             event.preventDefault();
