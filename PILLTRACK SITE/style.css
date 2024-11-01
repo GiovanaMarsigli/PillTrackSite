@@ -550,3 +550,328 @@ p {
         display: block;
     }
 }
+
+/* Configurações gerais para responsividade */
+body {
+    background-color: #F0F2EE;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+.navbar {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F0F2EE;
+    z-index: 1000;
+}
+
+/* Configuração de container flexível */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar: Menu e Links */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    transition: font-weight 0.3s ease;
+}
+
+/* Estilo para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Exibir o ícone de menu hambúrguer */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Ocultar o menu principal no celular inicialmente */
+    .navbar ul {
+        display: none;
+    }
+
+    /* Exibir o menu quando o ícone hambúrguer é ativado */
+    .navbar ul.showing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #F0F2EE;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    /* Ajustes para itens do menu no celular */
+    .navbar ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Centralizar e ajustar tamanho das imagens */
+    .hero img,
+    .screenshots img,
+    .step img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Ajustar tamanho dos textos e botões */
+    h1 {
+        font-size: 24px;
+    }
+
+    p, .about p, .how-it-works p, .developer p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* Layout flexível em coluna para centralizar */
+    .container, .hero-content, .steps, .developers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustar largura dos cartões no celular */
+    .step, .developer {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Footer ajustado para mobile */
+    .footer .container, .footer-info, .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Configurações gerais */
+body {
+    background-color: #F0F2EE;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+/* Ajustes para Navbar e Layout */
+.navbar {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F0F2EE;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+    transition: font-weight 0.3s ease;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+    /* Exibir ícone de menu hamburguer */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Ocultar menu principal inicialmente */
+    .navbar ul {
+        display: none;
+    }
+
+    /* Exibir menu ao clicar no hamburguer */
+    .navbar ul.showing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #F0F2EE;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
+    }
+
+    /* Ajuste do tamanho dos cards */
+    .steps, .developers-grid {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .step, .developer {
+        width: 90%; /* Reduz a largura dos cards no mobile */
+        max-width: 280px; /* Define um limite máximo de largura */
+        margin-bottom: 20px; /* Espaçamento entre os cards */
+    }
+
+    /* Centralizar e ajustar imagens */
+    .hero img, .screenshots img, .step img {
+        width: 100%;
+        max-width: 250px; /* Limita o tamanho das imagens */
+        height: auto;
+    }
+
+    /* Ajuste de texto e botões */
+    h1 {
+        font-size: 24px;
+    }
+
+    p, .about p, .how-it-works p, .developer p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    /* Footer Responsivo */
+    .footer .container, .footer-info, .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    /* Ajuste de tamanho dos cards no mobile */
+    .step, .developer {
+        width: 90%;
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste do círculo no topo dos cards */
+    .step img {
+        width: 60px;  /* Reduz o diâmetro do círculo */
+        height: 60px;
+        padding: 4px; /* Reduz o espaçamento interno */
+        top: 10px; /* Ajuste a posição para centralizar */
+    }
+
+    /* Ajuste do ícone dentro do círculo */
+    .step img img {
+        width: 40px;  /* Ajuste o tamanho do ícone */
+        height: 40px;
+    }
+}
+/* Ajustes de fontes de títulos para dispositivos móveis */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 24px !important; /* Define o mesmo tamanho para todos os títulos */
+        font-weight: bold;
+        color: #000; /* Define a cor preta para os títulos */
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: none;
+    }
+}
+
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste de espaço no topo para evitar sobreposição */
+    .hero {
+        padding-top: 80px; /* Adicione espaço no topo da seção hero */
+    }
+
+    /* Navbar fixa sem sobrepor o conteúdo */
+    .navbar {
+        height: 60px; /* Altura adequada para navbar no mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Reduz ao mínimo o espaço entre as sections */
+    section {
+        margin-top: 2px !important; /* Reduz ainda mais a margem superior */
+        margin-bottom: 2px !important; /* Reduz ainda mais a margem inferior */
+        padding-top: 2px !important; /* Reduz ainda mais o padding superior */
+        padding-bottom: 2px !important; /* Reduz ainda mais o padding inferior */
+    }
+}
+@media (max-width: 768px) {
+    /* Ajustar o espaço entre o menu toggle e a primeira seção */
+    .hero {
+        margin-top: 500; /* Aumente ou diminua conforme necessário */
+    }
+
+    /* Outros estilos responsivos... */
+
+/* Navbar */
+.navbar {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F0F2EE;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Imagens e Títulos */
+
+.imglogo {
+    width: 50px;
+}
+}
