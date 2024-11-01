@@ -1,5 +1,4 @@
 <h1 align="center">PillTrack</h1> <br>
-
 ## Tabela de Conteúdos
 
 - [Introdução](#Introdução)
